@@ -25,5 +25,5 @@ ENV PORT=8000
 EXPOSE 8000
 
 # If your Flask entry is app.py with "app = Flask(__name__)"
-#CMD ["sh","-c","gunicorn -b 0.0.0.0:${PORT} app:app"]
+CMD ["sh","-c","gunicorn -b 0.0.0.0:${PORT} app:app"]
 # If your file is main.py, change to:  main:app
